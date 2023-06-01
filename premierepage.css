@@ -1,0 +1,22 @@
+
+
+/* premiere page*/
+.premierepage {
+    height:600px;
+    width: auto;
+    background-color: rgb(5, 123, 123);
+  
+}
+
+.imglezart2 {
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+   
+}
+
+.imglezart2 > .premierepage{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
