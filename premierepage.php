@@ -22,40 +22,90 @@
 
 <style>
 
-
-img{
-    width: 260vh;
+.covering{
+    width: auto;
     height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/covering.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
 }
 
+
+.textile{
+    width: auto;
+    height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/smurboulogne.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
+}
+
+.signaletique{
+    width: auto;
+    height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/signalétique.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
+}
+
+.panneau{
+    width: auto;
+    height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/130941089_1748141352020523_5384673303095881047_n.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
+}
+
+
+.quefaisonsnous{
+    width: auto;
+    height: 80vh;
+    background-image: url('./images/Image\ 7.png');
+}
 
 
 
 </style>
 
+<h4>QUE-FAISONS-NOUS?</h4>
 
 <div class="quefaisonsnous">
-    <h4>QUE-FAISONS-NOUS?</h4>
 </div>
-
+<br>
 <div class="textile">
-    <h4 class="texte">TEXTILE</h4>
-    <img class="imagetextile" src="./images/smurboulogne.jpg" height="100%" alt="camion" id="monImage">
+    <h4 class="texte">Textile</h4>
 </div>
-
+<br>
 <div class="covering">
-    <h4>covering</h4>
-    <img src="./images/covering.jpg" height="50%" width="50%" alt="" id="imagecovering">
+    <h4>Covering</h4>
 </div>
-
+<br>
 <div class="signaletique">
-    <h4>signalétique</h4>
-    <img src="./images/signalétique.jpg" height="50%" width="50%" alt="panneau">
+    <h4>Signalétique</h4>
 </div>
-
+<br>
 <div class="panneau">
-    <h4>panneau publicitaire</h4>
-    <img src="./images/130941089_1748141352020523_5384673303095881047_n.png" height="50%" width="50%" alt="panneau">
+    <h4>Panneau Publicitaire</h4>
+   
 </div>
 
 <div class="parent1">
