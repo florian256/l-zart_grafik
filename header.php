@@ -8,6 +8,46 @@
     <title>header</title>
 </head>
 
+
+<style>
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color:black;
+    justify-content: center;
+    display: flex;
+}
+
+/* header */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+}
+
+
+.menu > h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imglezart1 {
+    height: 13vh;
+    width: 13vw;
+    margin-top: 25px;
+}
+/* fin header*/
+
+</style>
+
+
     <header> 
 
     

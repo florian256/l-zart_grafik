@@ -1,24 +1,92 @@
+
+<?php  
+    include 'header.php';
+?>
+
+<?php  
+    include 'premierepresentation.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylsheet" href="./premierepage.css">
+    <link rel="stylesheet" href="./premierepage.css">
     <title>premierepage</title>
 </head>
 <body>
-    
-<?php  
-    include 'header.php'
-?>
 
-<?php  
-    include 'premierepresentation.php'
-?>
 
-   
-</div>
+<style>
+
+.covering{
+    width: auto;
+    height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/covering.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
+}
+
+
+.textile{
+    width: auto;
+    height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/smurboulogne.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
+}
+
+.signaletique{
+    width: auto;
+    height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/signalétique.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
+}
+
+.panneau{
+    width: auto;
+    height: 80vh;
+    border: 2px solid black;
+    background-image: url('./images/130941089_1748141352020523_5384673303095881047_n.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 10em;
+}
+
+
+.quefaisonsnous{
+    width: auto;
+    height: 80vh;
+    background-image: url('./images/Image\ 7.png');
+}
+
+
+
+</style>
+
+<h4>QUE-FAISONS-NOUS?</h4>
 
 <div class="quefaisonsnous">
     <h4> QUE-FAISONS-NOUS?</h4>
@@ -356,8 +424,27 @@ h4{
 </style>
 
 <?php 
-    include 'footer.php'
+    include 'footer.php';
 ?>
+
+<script>
+    // Sélectionnez l'élément image
+    var image = document.getElementById('monImage');
+
+    // Ajoutez un gestionnaire d'événement pour l'événement mouseover "passage de la souris"
+    image.addEventListener('mouseover', function() {
+        this.style.width = '1800px';
+    });
+
+    // Ajoutez un gestionnaire d'événement pour l'événement mouseout "déplacement du curseur aux dehors"
+    image.addEventListener('mouseout', function() {
+        this.style.width = '1200px';
+    });
+
+    image.addEventListener('mouseover', function() {
+        this.style.height = '600px';
+    });
+</script>
 
 </body>
 </html>
