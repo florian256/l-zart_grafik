@@ -15,26 +15,26 @@
 
 
 <div class="parent">
-<div class="div10"> 
-<div class="div20"> <ol class="menu"> 
-         <ol> <h2> Nos services</h2>
+<div class="di10"> 
+<div class="di20"> <ol class="menu"> 
+         <ol> <h3> Nos services</h3>
          <li> textile </li>
          <li> covering</li>
-         <li>signalétique </li>
+         <li> signalétique </li>
          <li> panneaux publicitaires</li>
 
        
      </li> 
   </ol>
   </ol>
-  <img class="lezart3" src=".//LEZARTcontourBlanc.png" height="120px" width="160px" alt="">
+  <img class="lezart3" src="../l-zart_grafik/images/LEZARTcontourBlanc.png" height="120px" width="180px" alt="lézart bleu">
    
  </div>
 
-<div class="div30"> <h2>Qui-sommes-nous?</h2></div>
+<div class="div30"> <h3>Qui-sommes-nous?</h3></div>
 
 <div class="div40"> 
-   <h2>Contact</h2> </div>
+   <h3>Contact</h3> </div>
 </div></div>
  
 <style>
@@ -47,26 +47,24 @@
         text-align: center;
         display: flex;
         align-items: left;
+        font-size: 20px;
     }
 
-    h2{
+    h3{
         color: white;
+        font-size: 30px;
        
     }
 
    
     .lezart3 {
-        justify-items: left;
         display: flex;
-        align-items: left;
-        justify-content:left;
-        justify-items: left;    
-        margin-top: 50px;  
+        position: relative;
+        top: 15%;
+        left: 5%;
+       
+                
     }
-
-</style>
-
-<style>
 
 
 /* attention */
@@ -78,24 +76,25 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.div10 { grid-area: 1 / 1 / 3 / 6; 
+.di10 { grid-area: 1 / 1 / 3 / 6; 
     height: 300px;
     width: 100%;
     display: flex;
+    background-color: aqua;
 
 }
 
-.div20 { grid-area: 1 / 1 / 3 / 3;
+.di20 { grid-area: 1 / 1 / 3 / 3;
     height: 100%;
     width: 30%;
-    background-color: blue;
     justify-content: left;
     display: block;
     text-align: left;
+    background-color: aqua;
     
 }
 
-.div20 >ol {
+.di20 >ol {
     display: flex;
     text-align: left;
     justify-content: left;
@@ -105,7 +104,7 @@ grid-row-gap: 0px;
     margin-left: 0px;
 }
 
-.div20 >li {
+.di20 >li {
     display: flex;
     text-align: left;
     justify-content: left;
@@ -119,16 +118,18 @@ grid-row-gap: 0px;
 .div30 { grid-area: 1 / 3 / 3 / 4; 
     height: 100%;
     width: 40%;
-    background-color: pink;
+    background-color: aqua;
     text-align: center;
 
 }
 
 .div40 { grid-area: 1 / 4 / 3 / 6;
-    background-color: green;
+    background-color: aqua;
     height: 100%;
     width: 30%;
     text-align: right;
+    position: relative;
+    right: 1%;
 
 }
 </style>

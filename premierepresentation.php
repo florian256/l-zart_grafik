@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="premierepage">
-    <img class="imglezart2" src="../lezartgrafik/LEZARTcontourBlanc.png" height="320px" width="350px" alt="lézard bleu">
+    <img class="imglezart2" src="../l-zart_grafik/images/LEZARTcontourBlanc.png" height="320px" width="350px" alt="lézard bleu">
     <br><br><br><br><br>
 
     <h1> Toutes les Solutions pour votre Communication </h1>
