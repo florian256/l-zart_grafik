@@ -4,80 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slider</title>
-</head>
-<body>
-    
-    <div class="confiance"> ILS NOUS FONT CONFIANCE.. 
-         <div class="slider">  <img class="active" src="../lezartgrafik/images/julien.sarl.jpg" alt="">
-        <img src="../l-zart_grafik/images/valeo.jpg" alt="">
-        <img src="../l-zart_grafik/images/smurboulogne.jpg" alt="">
-        <div class="container-boutton">
-        <div class="bouton-nav left"> <img src="../l-zart_grafik/images/icons8-flèche-droite.gif" alt=""> </div>   
-        <div class="bouton-nav right"> </div> 
-        </div>
-         </div>
-        </div>
-        
-        <style> 
-        
-        *, ::before, ::after{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        
-        .confiance {
-            height: 500px;
+    <title>Slider</title>
+    <style>
+        .slider {
+            position: relative;
             width: 100%;
-            margin: 0 auto;
-            padding: 50px;
             max-width: 1000px;
             margin: 0 auto;
-            
+            overflow: hidden;
         }
-        
-        .slider img{
-            max-width: 100%;
+
+        .slider img {
             display: none;
+            max-width: 100%;
         }
-        
-        img.active{
+
+        .slider img.active {
             display: block;
-            animation: fade 0.8s;
-            max-width: 100% ;
-            max-height: 600px;
         }
-        
-        @keyframes fade{
-            from{
-                opacity: 0;
-            }
-            to{
-                opacity: 1;
-            }
-        
-           
-        }
-        
-        .container-boutton{
-            width: 100%;
-            height: auto;
-            box-shadow: 0 10px 10px black;
-            border: solid black 1px;
-            display: flex;
-        
-        }
-        
-        .boutton-nav{
-            font-size: 50px;
-            margin: 0 15px;
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
             cursor: pointer;
         }
-        </style>
 
-        <script src="slide-1.js"></script>
+        .prev {
+            left: 10px;
+        }
 
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img class="active" src="./images/covering.jpg" alt="">
+        <img src="./images/covering2.jpg" alt="">
+        <img src="./images/covering3.jpg" alt="">
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = slider.querySelectorAll('img');
+        const prevButton = slider.querySelector('.prev');
+        const nextButton = slider.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+        }
+
+        function goToPreviousSlide() {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        }
+
+        function goToNextSlide() {
+            currentSlide++;
+            if (currentSlide === slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        }
+
+        prevButton.addEventListener('click', goToPreviousSlide);
+        nextButton.addEventListener('click', goToNextSlide);
+    </script>
 </body>
 </html>
